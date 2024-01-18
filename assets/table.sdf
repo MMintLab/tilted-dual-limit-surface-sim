@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="table">
+    <link name="table_body">
+      <visual name="table_visual">
+        <geometry>
+          <mesh>
+            <uri>table_wide.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <pose> 0 0 -0.05 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.5 2.1875 0.1</size>
+          </box>
+        </geometry>
+        <drake:proximity_properties>
+          <drake:compliant_hydroelastic/>
+          <!-- <drake:rigid_hydroelastic/> -->
+          <drake:hydroelastic_modulus>1e10</drake:hydroelastic_modulus>
+          <drake:mu_static>0.1</drake:mu_static>
+          <drake:mu_dynamic>0.1</drake:mu_dynamic>
+          <drake:hunt_crossley_dissipation>1e8</drake:hunt_crossley_dissipation>
+          <drake:mesh_resolution_hint>0.00001</drake:mesh_resolution_hint>
+        </drake:proximity_properties>
+      </collision>
+    </link>
+  </model>
+</sdf>
