@@ -1,7 +1,7 @@
 # tilted-dual-limit-surface-sim
 Simulation code for Dual Limit Surface Motion Planner on a tilted support.
 
-- using python, run the following: "python3 -m pip install -r requirements.txt"
+- using python, run the following:
 ```console
 python3 -m pip install -r requirements.txt
 ```
