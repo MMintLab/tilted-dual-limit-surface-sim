@@ -7,4 +7,3 @@ python3 -m pip install -r requirements.txt
 ```
 
 - to run the dual limit surface, run all of the cells on the notebook until the last cell.
-- NOTE: make sure that the assets folder is in the same directory as standalone_notebook.ipynb
